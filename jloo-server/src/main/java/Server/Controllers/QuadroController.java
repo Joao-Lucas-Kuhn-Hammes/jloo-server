@@ -22,7 +22,7 @@ import Server.Repository.QuadroRepository;
 @RequestMapping("/quadro/")
 public class QuadroController {
 	
-	@Autowired
+	@org.springframework.beans.factory.annotation.Autowired(required=false)
 	private QuadroRepository quadroR;
 	
 	@GetMapping("{id}")

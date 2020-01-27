@@ -3,6 +3,7 @@ package Server.Controllers;
 
 import java.util.List;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.http.ResponseEntity;
@@ -25,7 +26,8 @@ import Server.Repository.ListaRepository;
 @RestController
 @RequestMapping("/lista/")
 public class ListaController {
-@Autowired
+	
+	@org.springframework.beans.factory.annotation.Autowired(required=false)
     private ListaRepository listaRepository;
 
     @GetMapping("{id}")

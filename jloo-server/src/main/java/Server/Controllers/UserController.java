@@ -22,7 +22,7 @@ import Server.Repository.UserRepository;
 @RequestMapping("/user/")
 public class UserController {
 	
-	@Autowired
+	@org.springframework.beans.factory.annotation.Autowired(required=false)
 	private UserRepository userR;
 	
 	@GetMapping("{id}")
